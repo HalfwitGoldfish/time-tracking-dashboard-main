@@ -1,0 +1,176 @@
+body {
+    background-color: #0e1323;
+    color: #ffffff;
+}
+
+.cardGrid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, auto);
+    height: 100vh;
+    gap: 2em;
+}
+
+.jeremy {
+    grid-row: span 2;
+    width: 15.938em;
+    border-radius: 15px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.cardBody {
+    height: fit-content;
+}
+
+.cardHeight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12.4375em;
+    width: 15.9375em;
+    border-radius: 15px;
+}
+
+.cardBodyDBlue {
+    background-color: #1c204b;
+}
+
+.jeremySection {
+    background-color: #5747ea;
+    height: 22.125em;
+    border-radius: 15px;
+}
+
+.jeremyPic {
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 5px;
+    width: 4.875em;
+}
+
+/* Work-start */
+.work {
+    background-color: #ff8b64;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.workHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.workHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Work-end */
+
+/* Play-start */
+.play {
+    background-color: #55c2e6;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.playHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.playHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Play-end */
+
+/* Study-start */
+.study {
+    background-color: #ff5e7d;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.studyHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.studyHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Study-end */
+
+/* Exercise-start */
+.exercise {
+    background-color: #4bcf82;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.exerciseHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.exerciseHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Exercise-end */
+
+/* Social-start */
+.social {
+    background-color: #7335d2;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.socialHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.socialHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Social-end */
+
+/* Self Care-start */
+.selfCare {
+    background-color: #f1c75b;
+    border-radius: 15px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.selfCareHeader {
+    text-align: end;
+    height: 2.8125em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.selfCareHeader img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* Self Care-end */
