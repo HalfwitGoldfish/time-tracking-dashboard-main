@@ -10,7 +10,7 @@ body {
     display: grid;
     place-content: center;
     grid-template-columns: repeat(4, auto);
-    height: calc(100vh - 16px);
+    height: calc(100vh - 29px);
     gap: 2em;
 }
 
@@ -378,3 +378,6 @@ body {
         height: 38px;
     }
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
