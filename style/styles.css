@@ -328,14 +328,14 @@ body {
     }
 
     .mobilePic {
-        padding-left: 1em;
+        margin-left: 1.5em;
     }
 
     .mobileFlex {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 1em;
+        margin-left: 1em;
     }
 
     .cardBody {

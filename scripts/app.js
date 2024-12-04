@@ -17,10 +17,10 @@ const previousCare = document.getElementById("previousCare");
 let jsonData = "";
 
 async function apiCall() {
-  const response = await fetch("data/data.json")
+  const response = await fetch("data/data.json");
   const data = await response.json();
   jsonData = data;
-  startFunction(data)
+  startFunction(data);
 };
 
   function displayText(dates, times)
