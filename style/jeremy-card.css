@@ -1,0 +1,51 @@
+.jeremy {
+    grid-row: span 2;
+    width: 15.938em;
+    border-radius: 15px;
+}
+
+.jeremySection {
+    background-color: #5747ea;
+    height: 22.125em;
+    border-radius: 15px;
+}
+
+.jeremyPic {
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 3px;
+    width: 4.875em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.whoFor {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: #bbc0ff;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.timeBtn {
+    margin-top: 1.4em;
+    color: #7078c9;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+.timeBtn:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.timeSelect {
+    color: #ffffff;
+}

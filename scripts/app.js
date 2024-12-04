@@ -23,7 +23,7 @@ async function apiCall() {
   startFunction(data);
 };
 
-  function displayText(dates, times)
+function displayText(dates, times)
 {
   currentWork.innerText = `${jsonData[0].timeframes[times].current}hrs`;
   previousWork.innerText = `${dates} - ${jsonData[0].timeframes[times].previous}hrs`;
