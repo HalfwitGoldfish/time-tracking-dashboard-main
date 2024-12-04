@@ -10,7 +10,7 @@ body {
     display: grid;
     place-content: center;
     grid-template-columns: repeat(4, auto);
-    height: 100vh;
+    height: calc(100vh - 16px);
     gap: 2em;
 }
 
@@ -29,7 +29,6 @@ body {
 .paddingTop {
     padding-top: 2em;
 }
-
 
 .jeremy {
     grid-row: span 2;
@@ -76,7 +75,6 @@ body {
     font-family: "Rubik", sans-serif;
     background-color: transparent;
     border: none;
-    /* width: fit-content; */
 }
 
 .timeSelect {
@@ -321,7 +319,7 @@ body {
     }
 
     .timeBtn {
-        padding-left: 6px;
+        margin-left: 0;
     }
 
     .name {
