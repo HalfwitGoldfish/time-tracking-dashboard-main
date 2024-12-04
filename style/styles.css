@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     background-color: #0e1323;
     color: #ffffff;
+    font-family: "Rubik", sans-serif;
 }
 
 .cardGrid {
@@ -11,25 +14,39 @@ body {
     gap: 2em;
 }
 
+.paddingLeft {
+    padding-left: 2em;
+}
+
+.paddingRight {
+    padding-right: 2em;
+}
+
+.paddingTop {
+    padding-top: 2em;
+}
+
+.paddingBottom {
+    padding-bottom: 2em;
+}
+
 .jeremy {
     grid-row: span 2;
     width: 15.938em;
     border-radius: 15px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
 }
 
-.cardBody {
-    height: fit-content;
+.whoFor {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: #bbc0ff;
 }
 
-.cardHeight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.4375em;
-    width: 15.9375em;
-    border-radius: 15px;
+.name {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
 }
 
 .cardBodyDBlue {
@@ -45,16 +62,95 @@ body {
 .jeremyPic {
     background-color: #ffffff;
     border-radius: 100%;
-    padding: 5px;
+    padding: 3px;
     width: 4.875em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.timeBtn {
+    margin-top: 1.4em;
+    color: #7078c9;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+}
+
+.timeSelect {
+    color: #ffffff;
+}
+
+.timeBtn:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cardBody {
+    height: fit-content;
+}
+
+.cardHeight {
+    height: 12.4375em;
+    width: 15.9375em;
+    border-radius: 15px;
+}
+
+.cardHeight:hover {
+    background-color: #33397a;
+    cursor: pointer;
+}
+
+.cardTitle {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 20px;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.3em;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.alignEnd {
+    display: flex;
+    justify-content: end;
+}
+
+.dots {
+    color: #bbc0ff;
+    font-size: 40px;
+    letter-spacing: -3px;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    font-family: "Roboto", serif;
+}
+
+.dots:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hours {
+    font-size: 56px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.previousHours {
+    padding-top: 0.5em;
+    font-size: 15px;
+    font-weight: 400;
+    color: #bbc0ff;
+    margin: 0;
 }
 
 /* Work-start */
 .work {
     background-color: #ff8b64;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .workHeader {
@@ -67,6 +163,7 @@ body {
 .workHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -10px;
 }
 /* Work-end */
 
@@ -74,8 +171,6 @@ body {
 .play {
     background-color: #55c2e6;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .playHeader {
@@ -88,6 +183,7 @@ body {
 .playHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -5px;
 }
 /* Play-end */
 
@@ -95,8 +191,6 @@ body {
 .study {
     background-color: #ff5e7d;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .studyHeader {
@@ -109,6 +203,7 @@ body {
 .studyHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -8px;
 }
 /* Study-end */
 
@@ -116,8 +211,6 @@ body {
 .exercise {
     background-color: #4bcf82;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .exerciseHeader {
@@ -130,6 +223,7 @@ body {
 .exerciseHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -1px;
 }
 /* Exercise-end */
 
@@ -137,8 +231,6 @@ body {
 .social {
     background-color: #7335d2;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .socialHeader {
@@ -151,6 +243,7 @@ body {
 .socialHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -15px;
 }
 /* Social-end */
 
@@ -158,8 +251,6 @@ body {
 .selfCare {
     background-color: #f1c75b;
     border-radius: 15px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 }
 
 .selfCareHeader {
@@ -172,5 +263,115 @@ body {
 .selfCareHeader img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: 0px -10px;
 }
 /* Self Care-end */
+
+@media (max-width: 1150px){
+    .cardGrid {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        grid-template-columns: repeat(3, auto);
+        height: 100%;
+    }
+
+    .jeremy {
+        grid-row: span 3;
+    }
+}
+
+@media (max-width: 860px){
+    .cardGrid {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .social {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 570px){
+    .cardGrid {
+        grid-template-columns: auto;
+    }
+
+    .jeremy {
+        grid-row: auto;
+        width: 327px;
+        height: 203px;
+    }
+
+    .jeremySection {
+        height: 133px;
+        display: flex;
+    }
+
+    .jeremyPic {
+        width: 64px;
+    }
+
+    .mobileSelect {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .timeBtn {
+        padding-left: 6px;
+    }
+
+    .name {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .mobilePic {
+        padding-left: 1em;
+    }
+
+    .mobileFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+    }
+
+    .cardBody {
+        height: 160px;
+    }
+
+    .cardHeight {
+        width: auto;
+        height: 122px;
+    }
+
+    .cardTitle {
+        padding-top: 1.5em;
+        padding-bottom: 0.7em;
+    }
+
+    .hours {
+        font-size: 32px;
+    }
+
+    .mobileHrsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .mobileHrsFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobileHrsFlex:nth-child(2) {
+        justify-content: end;
+    }
+
+    .noPadding {
+        padding: 0;
+    }
+
+    .mobileHeader {
+        height: 38px;
+    }
+}
