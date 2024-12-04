@@ -14,21 +14,22 @@ body {
     gap: 2em;
 }
 
-.paddingLeft {
-    padding-left: 2em;
+.marginLeft {
+    margin-left: 2em;
 }
 
-.paddingRight {
-    padding-right: 2em;
+.marginRight {
+    margin-right: 2em;
+}
+
+.marginBottom {
+    margin-bottom: 2em;
 }
 
 .paddingTop {
     padding-top: 2em;
 }
 
-.paddingBottom {
-    padding-bottom: 2em;
-}
 
 .jeremy {
     grid-row: span 2;
@@ -75,7 +76,7 @@ body {
     font-family: "Rubik", sans-serif;
     background-color: transparent;
     border: none;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .timeSelect {
@@ -283,6 +284,10 @@ body {
 @media (max-width: 860px){
     .cardGrid {
         grid-template-columns: repeat(2, auto);
+    }
+
+    .jeremy {
+        grid-row: span 2;
     }
 
     .social {
