@@ -14,17 +14,16 @@ const previousSocial = document.getElementById("previousSocial");
 const currentCare = document.getElementById("currentCare");
 const previousCare = document.getElementById("previousCare");
 
-let jsonData = "";
-
 async function apiCall() {
   const response = await fetch("data/data.json");
   const data = await response.json();
-  jsonData = data;
-  startFunction(data);
+  return data;
 };
 
-function displayText(dates, times)
+async function displayText(dates, times)
 {
+  let jsonData = await apiCall();
+
   currentWork.innerText = `${jsonData[0].timeframes[times].current}hrs`;
   previousWork.innerText = `${dates} - ${jsonData[0].timeframes[times].previous}hrs`;
 
@@ -44,7 +43,7 @@ function displayText(dates, times)
   previousCare.innerText = `${dates} - ${jsonData[5].timeframes[times].previous}hrs`;
 }
 
-function startFunction(populate){
+function startFunction(){
   dailyBtn.className = "timeBtn marginLeft";
   weeklyBtn.className = "timeBtn marginLeft timeSelect";
   monthlyBtn.className = "timeBtn marginLeft";
@@ -72,4 +71,4 @@ monthlyBtn.addEventListener ("click", () => {
   displayText("Last Month", "monthly");
 });
 
-apiCall();
+startFunction();
