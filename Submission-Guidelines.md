@@ -8,4 +8,4 @@
 
 - [Github](https://github.com/HalfwitGoldfish/time-tracking-dashboard-main)
 
-**Peer Review**:Kassandra Spacek Everything looks great. The responsiveness is very smooth. I love how you cut down on the bulk of the code for the js.
+**Peer Review**: Kassandra Spacek Everything looks great. The responsiveness is very smooth. I love how you cut down on the bulk of the code for the js.
